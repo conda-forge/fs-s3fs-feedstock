@@ -1,7 +1,7 @@
 {% set name = "fs-s3fs" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.8" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "79ce34855c9af4003c736ed629c08558b67574c737c7065da436c16e7f71fca7" %}
+{% set hash_value = "5beb2f3a7f6e54da95d6497281ca032ea12956682a6342e875ee5377ef7ffcb6" %}
 
 package:
   name: '{{ name|lower }}'
