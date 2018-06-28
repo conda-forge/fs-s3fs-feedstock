@@ -14,14 +14,16 @@ Amazon S3 filesystem implementation for PyFilesystem2
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fs-s3fs-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fs-s3fs-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/fs-s3fs-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fs-s3fs-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/fs-s3fs-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/fs-s3fs-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/fs-s3fs-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/fs-s3fs-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/fs-s3fs-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/fs-s3fs-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/fs-s3fs-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/fs-s3fs-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fs-s3fs/badges/version.svg)](https://anaconda.org/conda-forge/fs-s3fs)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fs-s3fs/badges/downloads.svg)](https://anaconda.org/conda-forge/fs-s3fs)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-fs--s3fs-green.svg)](https://anaconda.org/conda-forge/fs-s3fs) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/fs-s3fs.svg)](https://anaconda.org/conda-forge/fs-s3fs) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/fs-s3fs.svg)](https://anaconda.org/conda-forge/fs-s3fs) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/fs-s3fs.svg)](https://anaconda.org/conda-forge/fs-s3fs) |
 
 Installing fs-s3fs
 ==================
