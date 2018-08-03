@@ -13,7 +13,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install  --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
     - setuptools
     - boto3 >=1.4.0,<2
     - fs >=2.0.18,<2.1
-    - six >=1.10.0,<1.11
+    - six >=1.10,<2
     - enum34  # [py2k]
 
 test:
