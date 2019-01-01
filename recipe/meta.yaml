@@ -1,7 +1,7 @@
 {% set name = "fs-s3fs" %}
-{% set version = "0.1.9" %}
+{% set version = "1.1.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "a101aa1d10547c8a354599b0552d2a4cc2311a768cc345ed02d55f89ec7d3fdc" %}
+{% set hash_value = "49bfa4572bb11e37324dd43be935ab99376259eff652365aef0e4a747bb11418" %}
 
 package:
   name: '{{ name|lower }}'
@@ -13,7 +13,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install  --single-version-externally-managed --record=record.txt
 
 requirements:
