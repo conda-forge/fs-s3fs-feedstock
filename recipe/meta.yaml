@@ -1,31 +1,27 @@
-{% set name = "fs-s3fs" %}
-{% set version = "0.1.9" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "a101aa1d10547c8a354599b0552d2a4cc2311a768cc345ed02d55f89ec7d3fdc" %}
+{% set version = "1.1.1" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: fs-s3fs
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  url: https://pypi.io/packages/source/f/fs-s3fs/fs-s3fs-{{ version }}.tar.gz
+  sha256: b57f8c7664460ff7b451b4b44ca2ea9623a374d74e1284c2d5e6df499dc7976c
 
 build:
-  number: 1
-  script: python setup.py install  --single-version-externally-managed --record=record.txt
+  number: 2
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - setuptools
-    - boto3 >=1.4.0,<2
-    - fs >=2.0.18,<2.1
-    - six >=1.10,<2
+    - boto3 >=1.9,<2
+    - fs >=2.4,<3
+    - six
     - enum34  # [py2k]
 
 test:
@@ -35,13 +31,14 @@ test:
 about:
   home: http://fs-s3fs.readthedocs.io/en/stable
   license: MIT
+  license_file: LICENSE
   license_family: MIT
   summary: Amazon S3 filesystem for PyFilesystem2
   description: "Amazon S3 filesystem implementation for PyFilesystem2"
-  doc_url: 'http://fs-s3fs.readthedocs.io/en/stable/'
-  dev_url: 'https://github.com/PyFilesystem/s3fs'
+  doc_url: http://fs-s3fs.readthedocs.io/en/stable
+  dev_url: https://github.com/PyFilesystem/s3fs
 
 extra:
   recipe-maintainers: 
-    - 'notestaff'
-    - 'willmcgugan'
+    - notestaff
+    - willmcgugan
