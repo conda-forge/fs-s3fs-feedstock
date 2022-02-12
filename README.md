@@ -125,6 +125,3 @@ Feedstock Maintainers
 * [@notestaff](https://github.com/notestaff/)
 * [@willmcgugan](https://github.com/willmcgugan/)
 
-
-<!-- dummy commit to enable rerendering -->
-
