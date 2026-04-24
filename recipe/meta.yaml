@@ -7,23 +7,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fs-s3fs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fs-s3fs-{{ version }}.tar.gz
   sha256: b57f8c7664460ff7b451b4b44ca2ea9623a374d74e1284c2d5e6df499dc7976c
 
 build:
-  number: 4
+  number: 5
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - boto3 ~=1.9
     - fs ~=2.4
-    - python >=3.6
+    - python >={{ python_min }}
     - six ~=1.10
 
 test:
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://fs-s3fs.readthedocs.io/en/stable
